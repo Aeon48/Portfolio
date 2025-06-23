@@ -12,13 +12,18 @@ export const EXPERIENCES = [
     year: "2023 - Present",
     role: "Graphics Designer , UI/UX Designer, Frontend Developer",
     company: "Unlimited Remit",
-    description: `As a Graphic Designer, I create engaging visual content, including logos, branding materials, and marketing assets, across digital and print media. By leveraging typography, color theory, and composition, I craft designs that align with company goals and brand identity using tools like Adobe Photoshop and Illustrator.
+    description: `As a Graphic Designer, I create engaging visual content, including logos, branding, and marketing materials across digital and print media. As a UI/UX Designer, I craft intuitive, user-friendly interfaces for websites and apps, focusing on usability and seamless experiences. As a Frontend Developer, I bring designs to life with HTML, CSS, and JavaScript, ensuring responsive, accessible, and high-performance web applications with smooth backend integration.
+`,
 
-    As a UI/UX Designer, I focus on developing seamless, user-friendly digital experiences for websites and mobile apps. I design intuitive interfaces with appealing layouts, interactive elements, and usability enhancements. Through user research, wireframing, prototyping, and feedback-driven iterations, I ensure accessible and efficient user experiences.
-    
-    In my role as a Frontend Developer, I transform design concepts into functional, responsive web applications using HTML, CSS, and JavaScript. I work closely with UI/UX Designers to create visually accurate, interactive interfaces and optimize websites for performance, accessibility, and SEO. I also ensure smooth integration with back-end systems via APIs.`,
-
-    technologies: ["Photoshop", "illustrator", "Figma", "HTML", "CSS", "VueJS", "ReactJS"],
+    technologies: [
+      "Photoshop",
+      "illustrator",
+      "Figma",
+      "HTML",
+      "CSS",
+      "VueJS",
+      "ReactJS",
+    ],
   },
   {
     year: "2023 - 2023",
@@ -74,20 +79,20 @@ export const PROJECTS = [
   },
 ];
 
-export const INTERN =[
+export const INTERN = [
   {
     year: "2022 - 2022",
-      role: "3d Modeling and Texturing Artist",
-      company: "MAYA Animation Studio",
-      technologies: ["Maya", "Blender", "Substance Painter", "3ds Max"],
+    role: "3d Modeling and Texturing Artist",
+    company: "MAYA Animation Studio",
+    technologies: ["Maya", "Blender", "Substance Painter", "3ds Max"],
   },
 
   {
     year: "2023 - 2023",
     role: "Full Stack Developer",
     company: "Jaamun Tech",
-    technologies: ["MongoDB", "Express", "ReactJS", "NodeJS"],  
-  }
+    technologies: ["MongoDB", "Express", "ReactJS", "NodeJS"],
+  },
 ];
 
 export const CONTACT = {
