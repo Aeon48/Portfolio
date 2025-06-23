@@ -29,7 +29,8 @@ export const EXPERIENCES = [
     year: "2023 - 2023",
     role: "Frontend Developer",
     company: "NepFilili",
-    description: `I have demonstrated expertise in HTML5, CSS3, object-oriented JavaScript, and large JavaScript applications, with proficiency in frameworks such as React. I’ve built reusable code that can be applied across multiple projects, designed and implemented responsive website interfaces for mobile, desktop, and tablet devices, and contributed to back-end development while collaborating on APIs. My experience includes participating in pre-project analysis and technical assessments to create user-friendly interfaces, handling special projects assigned by senior developers, and working closely with designers to bring concepts and designs to life. Additionally, I have structured web pages using Java, HTML, or XML to ensure smooth navigation and optimal user experiences.`,
+    description: `I have expertise in HTML5, CSS3, JavaScript, and React, building reusable code and responsive interfaces for mobile, desktop, and tablet devices. I collaborate with designers and back-end teams, contributing to APIs and ensuring seamless user experiences. I also assist in pre-project analysis and technical assessments to create efficient, user-friendly designs.
+.`,
     technologies: ["HTML", "CSS", "Javascript", "ReactJs"],
   },
   {
