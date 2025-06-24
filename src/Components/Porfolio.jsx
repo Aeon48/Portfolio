@@ -3,21 +3,21 @@ import { BEHANCE_PORTFOLIO } from "../constants";
 
 function Portfolio() {
   return (
-    <section className="my-24">
+    <section className="my-24 px-6 lg:px-12">
       {/* Behance Portfolio Section */}
-      <div className="bg-neutral-900 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all">
-        <h2 className="text-3xl font-bold text-center text-white mb-6">
+      <div className="bg-black p-8 rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.8)] hover:shadow-[0_0_30px_rgba(138,43,226,0.6)] transition-shadow transform hover:scale-[1.03] duration-300">
+        <h2 className="text-3xl font-extrabold text-center text-white mb-6 tracking-wide">
           {BEHANCE_PORTFOLIO.title}
         </h2>
-        <p className="text-lg text-neutral-300 text-center mb-6">
+        <p className="text-md text-gray-300 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
           {BEHANCE_PORTFOLIO.description}
         </p>
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-8">
           {BEHANCE_PORTFOLIO.image && (
             <img
               src={BEHANCE_PORTFOLIO.image}
               alt="Behance Portfolio Preview"
-              className="rounded-lg shadow-md w-[20px] sm:w-[250px] lg:w-[300px] object-scale-down"
+              className="rounded-lg shadow-lg w-full max-w-[320px] object-cover transition-transform duration-500 transform hover:scale-105"
             />
           )}
         </div>
@@ -26,7 +26,7 @@ function Portfolio() {
             href={BEHANCE_PORTFOLIO.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-purple-600 to-pink-500 px-6 py-3 text-lg font-medium text-white rounded-md hover:scale-105 transition-transform"
+            className="inline-block bg-gradient-to-r from-purple-600 via-purple-500 to-purple-700 text-white px-8 py-3 rounded-lg font-semibold tracking-wide shadow-lg hover:shadow-[0_0_15px_rgba(138,43,226,0.7)] hover:scale-105 transition-transform duration-300"
           >
             Visit My Behance Portfolio
           </a>
