@@ -40,24 +40,14 @@ function Hero() {
               animate="visible"
               className="font-light text-justify my-2 max-w-xl py-6 tracking-tighter leading-8"
             >
-              I’m a designer and developer with 4 years of experience in
-              Graphics Design, 2 years in UI/UX Design and Frontend Development,
-              and 2 years as a 3D Artist. My work blends creativity with
-              technical expertise, focusing on visually impactful designs that
-              communicate brand identity and create seamless user experiences.
-              In my 2 years as a UI/UX Designer and Frontend Developer, I’ve
-              focused on delivering user-centric digital solutions, crafting
-              intuitive interfaces that prioritize usability and accessibility.
-              My expertise in front-end technologies, particularly in frameworks
-              like React, allows me to develop scalable and responsive web
-              applications that enhance user experiences and drive business
-              outcomes.
-              <br /> <br />
-              In UI/UX and Frontend Development, I craft intuitive, user-centric
-              interfaces using React and other technologies, ensuring responsive
-              and accessible digital solutions. As a 3D Artist, I specialize in
-              modeling, texturing, and rendering, creating detailed and
-              immersive visuals for various projects.
+              Experienced creative professional with 4 years in Graphic Design,
+              2 years in UI/UX, and 2 years as a 3D Artist. Combines practical
+              design skills with technical know-how to deliver intuitive,
+              responsive, and engaging user experiences. Passionate about
+              creating visually compelling designs that not only look great but
+              also function seamlessly. Adept at collaborating with
+              cross-functional teams to bring innovative concepts to life while
+              maintaining a strong focus on user-centered design.
             </motion.p>
           </div>
         </div>

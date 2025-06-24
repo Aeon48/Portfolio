@@ -21,28 +21,35 @@ function Projects() {
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="group relative overflow-hidden rounded-xl bg-neutral-900/80 shadow-xl ring-1 ring-purple-500/20 backdrop-blur-md"
+          className="group relative overflow-hidden rounded-xl bg-transparent shadow-none ring-0 backdrop-blur-none"
         >
           <div className="flex flex-col lg:flex-row items-center">
             <div className="relative w-full lg:w-2/3 h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden">
-              <iframe
-                className="w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-[1.01]"
+              <motion.iframe
+                className="w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-[1.01] group-hover:opacity-90"
                 src="https://embed.figma.com/design/D9OFVTpuFx508gYsaXJq2H/Untitled?node-id=0-1&embed-host=share"
                 allowFullScreen
                 style={{ border: "none" }}
                 title="Figma Design Preview"
+                whileHover={{ scale: 1.05 }}
               />
             </div>
 
             <div className="flex flex-col items-start justify-center w-full lg:w-1/3 p-8 lg:p-10 text-left">
-              <h3 className="text-3xl font-semibold text-white mb-4">
+              <motion.h3
+                className="text-3xl font-semibold text-white mb-4"
+                whileHover={{ scale: 1.05 }}
+              >
                 EarnSikka UI Showcase
-              </h3>
-              <p className="text-neutral-300 mb-6 text-sm sm:text-base">
+              </motion.h3>
+              <motion.p
+                className="text-neutral-300 mb-6 text-sm sm:text-base"
+                whileHover={{ color: "#f1f1f1" }}
+              >
                 A high-fidelity Figma prototype built to visualize modern
                 finance app UX with elegant, responsive layouts and a strong
                 visual hierarchy.
-              </p>
+              </motion.p>
               <div className="flex flex-wrap gap-2">
                 {["Figma", "UX Design", "Prototyping", "High-Fidelity"].map(
                   (tech, i) => (
@@ -81,7 +88,7 @@ function Projects() {
               initial={{ opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="group relative overflow-hidden rounded-xl bg-neutral-900/80 shadow-xl ring-1 ring-purple-500/20 backdrop-blur-md"
+              className="group relative overflow-hidden rounded-xl bg-transparent shadow-none ring-0 backdrop-blur-none"
             >
               <div
                 className={`flex flex-col ${
@@ -89,32 +96,42 @@ function Projects() {
                 } items-center`}
               >
                 {/* Media Side */}
-                <div className="relative w-full lg:w-2/3 h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden">
+                <motion.div
+                  className="relative w-full lg:w-2/3 h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden"
+                  whileHover={{ scale: 1.05 }}
+                >
                   {project.figmaEmbedUrl ? (
                     <iframe
-                      className="w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-[1.01]"
+                      className="w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-[1.01] group-hover:opacity-90"
                       style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
                       allowFullScreen
                       src={project.figmaEmbedUrl}
                       title={`${project.title} Preview`}
                     />
                   ) : project.image ? (
-                    <img
+                    <motion.img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-contain p-4 transition-transform duration-700 ease-in-out group-hover:scale-[1.01]"
+                      className="w-full h-full object-contain p-4 transition-transform duration-700 ease-in-out group-hover:scale-[1.01] group-hover:opacity-90"
+                      whileHover={{ scale: 1.05 }}
                     />
                   ) : null}
-                </div>
+                </motion.div>
 
                 {/* Text Side */}
                 <div className="flex flex-col justify-center w-full lg:w-1/3 p-8 lg:p-10 text-left">
-                  <h3 className="text-2xl font-bold text-white mb-4">
+                  <motion.h3
+                    className="text-2xl font-bold text-white mb-4"
+                    whileHover={{ scale: 1.05 }}
+                  >
                     {project.title}
-                  </h3>
-                  <p className="text-neutral-300 mb-6 text-sm sm:text-base">
+                  </motion.h3>
+                  <motion.p
+                    className="text-neutral-300 mb-6 text-sm sm:text-base"
+                    whileHover={{ color: "#f1f1f1" }}
+                  >
                     {project.description}
-                  </p>
+                  </motion.p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, i) => (
                       <motion.span

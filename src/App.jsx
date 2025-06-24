@@ -6,6 +6,8 @@ import Technologies from "./Components/Technologies";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Portfolio from "./Components/Porfolio";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,14 +17,17 @@ function App() {
       </div>
       <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 
-      <div className="container mx-auto px-8">
+      {/* Apply max-w-full to avoid horizontal overflow */}
+      <div className="max-w-full mx-auto px-8">
         <Navbar />
         <Hero />
         {/* <About /> */}
         <Technologies />
         <Experience />
         <Projects />
+        <Portfolio />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -49,14 +49,16 @@ function Experience() {
                   isLeft ? "order-3 sm:ml-auto" : "order-1 sm:mr-auto"
                 }`}
               >
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                  <h3 className="text-lg sm:text-xl font-semibold text-white">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white leading-[1.8]">
                     {exp.role}
                   </h3>
                   <span className="text-sm text-purple-300">{exp.year}</span>
                 </div>
-                <h4 className="text-sm text-purple-100 mb-2">{exp.company}</h4>
-                <p className="text-sm sm:text-base text-neutral-300 mb-4">
+                <h4 className="text-sm text-purple-100 mb-4 leading-[1.8]">
+                  {exp.company}
+                </h4>
+                <p className="text-sm sm:text-base text-neutral-300 mb-6 leading-[2]">
                   {exp.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
