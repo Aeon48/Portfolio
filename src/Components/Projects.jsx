@@ -15,115 +15,136 @@ function Projects() {
       </motion.h2>
 
       <div className="grid gap-16 px-4 md:px-8 lg:px-16">
+        {/* Featured Project */}
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-2xl bg-[#0a0f1b] p-8 shadow-2xl lg:p-12"
+          viewport={{ once: true, margin: "-100px" }}
+          className="group relative overflow-hidden rounded-xl bg-neutral-900/80 shadow-xl ring-1 ring-purple-500/20 backdrop-blur-md"
         >
-          {/* 🔷 Wave SVG Top Separator */}
-          <svg
-            className="absolute top-0 left-0 w-full h-12 -translate-y-full fill-current text-[#0a0f1b]"
-            viewBox="0 0 1440 320"
-          >
-            <path d="M0,64L120,64C240,64,480,64,720,106.7C960,149,1200,235,1320,277.3L1440,320L1440,0L1320,0C1200,0..." />
-          </svg>
-
-          {/* 🌟 Gradient Accent */}
-          <div className="absolute inset-0 mx-auto w-3/4 h-0.5 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 opacity-60"></div>
-
-          <div className="relative z-10 flex flex-col items-center gap-6">
-            <h3 className="text-4xl font-bold text-white">Figma UI Showcase</h3>
-            <p className="max-w-2xl text-center text-neutral-400">
-              Interactive preview of EarnSikka Website
-            </p>
-
-            <div className="w-full max-w-4xl overflow-hidden rounded-xl border border-neutral-800 shadow-inner">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="relative w-full lg:w-2/3 h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden">
               <iframe
-                className="w-full aspect-video"
+                className="w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-[1.01]"
                 src="https://embed.figma.com/design/D9OFVTpuFx508gYsaXJq2H/Untitled?node-id=0-1&embed-host=share"
                 allowFullScreen
                 style={{ border: "none" }}
-                title="Embedded Figma Design"
+                title="Figma Design Preview"
               />
             </div>
-          </div>
 
-          {/* 🔷 Wave SVG Bottom Separator */}
-          <svg
-            className="absolute bottom-0 left-0 w-full h-12 translate-y-full fill-current text-[#0a0f1b]"
-            viewBox="0 0 1440 320"
-          >
-            <path d="M0,224L120,202.7C240,181,480,139,720,117.3C960,96,1200,96,1320,96L1440,96L1440,320L1320,320..." />
-          </svg>
-        </motion.div>
-
-        {/* 🚀 Other Projects from Constant */}
-        {PROJECTS.map((project, index) => (
-          <motion.div
-            key={index}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            className="group relative overflow-hidden rounded-xl bg-neutral-900/50 shadow-2xl transition-all hover:bg-neutral-900/70 hover:shadow-purple-500/20"
-          >
-            <div
-              className={`flex flex-col ${
-                index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-              }`}
-            >
-              {/* Project Image */}
-              <div className="relative h-64 w-full overflow-hidden lg:h-auto lg:w-1/3">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/70 to-transparent lg:bg-gradient-to-r" />
-              </div>
-
-              {/* Project Content */}
-              <div className="flex-1 p-8 lg:p-10">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-white">
-                    {project.title}
-                  </h3>
-                  <div className="my-2 h-1 w-20 bg-gradient-to-r from-purple-500 to-pink-500" />
-                </div>
-
-                <p className="mb-8 text-lg text-neutral-300">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-3">
-                  {project.technologies.map((tech, i) => (
+            <div className="flex flex-col items-start justify-center w-full lg:w-1/3 p-8 lg:p-10 text-left">
+              <h3 className="text-3xl font-semibold text-white mb-4">
+                EarnSikka UI Showcase
+              </h3>
+              <p className="text-neutral-300 mb-6 text-sm sm:text-base">
+                A high-fidelity Figma prototype built to visualize modern
+                finance app UX with elegant, responsive layouts and a strong
+                visual hierarchy.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["Figma", "UX Design", "Prototyping", "High-Fidelity"].map(
+                  (tech, i) => (
                     <motion.span
                       key={i}
                       whileHover={{ scale: 1.05 }}
-                      className="rounded-full bg-neutral-800 px-4 py-2 text-sm font-medium text-purple-300 shadow-md transition-all hover:bg-purple-900/30 hover:text-white"
+                      className="rounded-full bg-neutral-800 px-4 py-2 text-xs sm:text-sm font-medium text-purple-300 shadow-md hover:bg-purple-900/30 hover:text-white transition-all"
                     >
                       {tech}
                     </motion.span>
-                  ))}
-                </div>
-
-                {project.link && (
-                  <motion.a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="mt-8 inline-block rounded-lg bg-gradient-to-r from-purple-600 to-pink-500 px-6 py-3 font-medium text-white shadow-lg transition-all hover:shadow-purple-500/30"
-                  >
-                    View Project
-                  </motion.a>
+                  )
                 )}
               </div>
+              <motion.a
+                href="https://www.figma.com/proto/D9OFVTpuFx508gYsaXJq2H/Untitled?node-id=0-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="mt-8 inline-block rounded-md bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2.5 text-sm font-medium text-white shadow-md hover:shadow-purple-500/40"
+              >
+                View Prototype
+              </motion.a>
             </div>
-          </motion.div>
-        ))}
+          </div>
+        </motion.div>
+
+        {/* Alternating Projects */}
+        {PROJECTS.map((project, index) => {
+          const isEven = (index + 1) % 2 === 0;
+
+          return (
+            <motion.div
+              key={index}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              className="group relative overflow-hidden rounded-xl bg-neutral-900/80 shadow-xl ring-1 ring-purple-500/20 backdrop-blur-md"
+            >
+              <div
+                className={`flex flex-col ${
+                  isEven ? "lg:flex-row" : "lg:flex-row-reverse"
+                } items-center`}
+              >
+                {/* Media Side */}
+                <div className="relative w-full lg:w-2/3 h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden">
+                  {project.figmaEmbedUrl ? (
+                    <iframe
+                      className="w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-[1.01]"
+                      style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                      allowFullScreen
+                      src={project.figmaEmbedUrl}
+                      title={`${project.title} Preview`}
+                    />
+                  ) : project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-contain p-4 transition-transform duration-700 ease-in-out group-hover:scale-[1.01]"
+                    />
+                  ) : null}
+                </div>
+
+                {/* Text Side */}
+                <div className="flex flex-col justify-center w-full lg:w-1/3 p-8 lg:p-10 text-left">
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    {project.title}
+                  </h3>
+                  <p className="text-neutral-300 mb-6 text-sm sm:text-base">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, i) => (
+                      <motion.span
+                        key={i}
+                        whileHover={{ scale: 1.05 }}
+                        className="rounded-full bg-neutral-800 px-4 py-2 text-sm font-medium text-purple-300 shadow-md hover:bg-purple-900/30 hover:text-white transition-all"
+                      >
+                        {tech}
+                      </motion.span>
+                    ))}
+                  </div>
+
+                  {/* Optional View Prototype Button */}
+                  {project.figmaPrototypeLink && (
+                    <motion.a
+                      href={project.figmaPrototypeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="mt-4 inline-block rounded-md bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2.5 text-sm font-medium text-white shadow-md hover:shadow-purple-500/40"
+                    >
+                      View Prototype
+                    </motion.a>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );
