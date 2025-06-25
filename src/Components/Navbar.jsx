@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/Image/Name.png";
 import { FaLinkedin, FaBehance, FaGit, FaInstagram } from "react-icons/fa";
-import resume from "../assets/portfolio/resume.pdf";
+import resume from "@/assets/portfolio/resume.pdf";
 
 function Navbar() {
   return (
@@ -21,7 +21,6 @@ function Navbar() {
           download="Abhishek_Tuladhar_Resume.pdf"
           className="flex items-center gap-2 group transition-colors duration-300 hover:text-blue-400"
         >
-          {/* Resume Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5 transition-transform duration-300 group-hover:scale-110"
@@ -36,7 +35,6 @@ function Navbar() {
               d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h5l5 5v9a2 2 0 01-2 2z"
             />
           </svg>
-
           <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all after:duration-300 group-hover:after:w-full">
             Download Resume
           </span>
