@@ -8,7 +8,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Porfolio";
 import Footer from "./Components/Footer";
-import Slider from "./Components/Silder";
+import Slider from "./Components/Slider"; // ✅ correct spelling + casing
 
 function App() {
   return (
