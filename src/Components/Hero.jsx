@@ -40,14 +40,15 @@ function Hero() {
               animate="visible"
               className="font-light text-justify my-2 max-w-xl py-6 tracking-tighter leading-8"
             >
-              Experienced creative professional with 4 years in Graphic Design,
-              2 years in UI/UX, and 2 years as a 3D Artist. Combines practical
-              design skills with technical know-how to deliver intuitive,
-              responsive, and engaging user experiences. Passionate about
-              creating visually compelling designs that not only look great but
-              also function seamlessly. Adept at collaborating with
-              cross-functional teams to bring innovative concepts to life while
-              maintaining a strong focus on user-centered design.
+              Experienced creative professional with 5 years in Graphic Design,
+              over 2 years in UI/UX Design, and 2 years as a 3D Artist. Combines
+              strong visual design skills with technical expertise to deliver
+              intuitive, responsive, and engaging user experiences. Passionate
+              about crafting designs that are not only visually compelling but
+              also functionally seamless. Adept at collaborating with
+              cross-functional teams to bring innovative ideas to life, with a
+              consistent focus on user-centered design principles and real-world
+              usability.
             </motion.p>
           </div>
         </div>

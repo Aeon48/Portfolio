@@ -8,10 +8,10 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Graphic Designer, UI/UX Designer",
+    year: "2024 - Present",
+    role: "Graphic Designer, UI/UX Designer & Frontend Developer",
     company: "Unlimited Remit",
-    description: `As a Graphic Designer, I create visually striking digital and print assets, including logos, branding materials, and marketing collateral. I collaborate with teams to ensure cohesive design strategies that align with brand identity, effectively engaging the target audience. As a UI/UX Designer, I specialize in designing intuitive, user-centered interfaces, conducting user research, wireframing, and prototyping to deliver seamless, polished experiences across web and mobile platforms. My focus is on merging aesthetics with functionality to ensure the highest level of user satisfaction and interaction.Supported front-end development only to translate design to implementation.`,
+    description: `At Unlimited Remit, I lead visual design efforts across branding, digital marketing, and user interfaces. As a Graphic Designer, I produce visually compelling logos, advertisements, and promotional materials. In my role as a UI/UX Designer, I conduct user research, wireframing, and prototyping to deliver intuitive experiences. I also collaborate closely with frontend developers to implement responsive, accessible interfaces using modern web technologies.`,
     technologies: [
       "Photoshop",
       "Illustrator",
@@ -22,10 +22,10 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "2023 - 2023",
+    year: "2023 - 2024",
     role: "UI/UX Designer & Frontend Developer",
     company: "NepFilili",
-    description: `As a UI/UX Designer, I designed and optimized user-centered interfaces for responsive websites and web apps. I collaborated with cross-functional teams on user research, wireframing, and prototyping, ensuring intuitive and engaging designs. I also implemented my designs into frontend projects using ReactJS, focusing on user experiences, accessibility, and functionality.`,
+    description: `At NepFilili, I played a dual role—designing and implementing responsive, user-centered interfaces. I was involved in user research, interface prototyping, and frontend development using ReactJS. My work ensured consistent design systems across web platforms while enhancing usability and performance.`,
     technologies: [
       "Figma",
       "Sketch",
@@ -33,24 +33,25 @@ export const EXPERIENCES = [
       "HTML",
       "CSS",
       "JavaScript",
+      "ReactJS",
       "User Research",
       "Wireframing",
       "Prototyping",
     ],
   },
   {
-    year: "2022 - 2022",
+    year: "2021 - 2023",
     role: "3D Modeling and Texturing Artist",
     company: "MAYA Animation Studio",
-    description: `At MAYA Animation Studio, I specialized in creating detailed 3D models and textures for interior design and architectural visualization. Using industry-standard software like Maya and Blender, I crafted realistic and visually accurate representations of spaces, furniture, and materials. I collaborated closely with architects and designers to ensure models were optimized for realistic rendering and seamless integration into virtual environments. My work contributed to high-quality architectural visualizations for both design presentations and client projects.`,
+    description: `At MAYA Animation Studio, I created detailed 3D models and textures for characters, hard surface assets, and environments. I applied realistic materials, handled lighting setups, and collaborated with the animation and technical teams to deliver visually accurate and optimized scenes for production.`,
     technologies: ["Maya", "Blender", "Substance Painter", "3ds Max"],
   },
   {
-    year: "2021 - 2021",
+    year: "2020 - 2021",
     role: "Graphic Designer",
     company: "Maitreya Bodhi Home Care & Clinic",
-    description: `As a Graphic Designer, I developed visually compelling marketing materials including business cards, brochures, and posters. I was responsible for creating brand guidelines, visual assets, and promotional content that resonated with the target audience. This role honed my skills in branding and layout design, allowing me to develop a keen eye for detail while maintaining consistency across all marketing materials.`,
-    technologies: ["Adobe Photoshop", "Adobe Illustrator"],
+    description: `As a Graphic Designer, I produced branding and marketing materials across print and digital formats. I was responsible for layout design, image retouching, and project planning. My work supported the clinic’s outreach, brand presence, and patient engagement.`,
+    technologies: ["Adobe Photoshop", "Adobe Illustrator", "InDesign"],
   },
 ];
 
