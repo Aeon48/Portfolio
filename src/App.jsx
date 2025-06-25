@@ -8,6 +8,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Porfolio";
 import Footer from "./Components/Footer";
+import Slider from "./Components/Silder";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Technologies />
         <Experience />
         <Projects />
+        <Slider />
         <Portfolio />
         <Contact />
         <Footer />
