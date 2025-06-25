@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import holi from "../assets/Image/Portfolio/Holi.png";
-import slider3 from "../assets/Image/Portfolio/ZapAd.png";
-import slider4 from "../assets/Image/Portfolio/slider4.png";
+import design from "../assets/Image/Portfolio/design.png";
+import zapad from "../assets/Image/Portfolio/ZapAd.png";
+import render from "../assets/Image/Portfolio/render.png";
 
-const images = [holi, slider3, slider4];
+const images = [holi, design, zapad, render];
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
