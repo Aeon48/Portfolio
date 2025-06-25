@@ -1,10 +1,6 @@
 import React from "react";
 import logo from "../assets/Image/Name.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaBehance } from "react-icons/fa";
-import { FaGit } from "react-icons/fa";
-import { FaFileAlt } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaBehance, FaGit, FaInstagram } from "react-icons/fa";
 import resume from "../assets/portfolio/resume.pdf";
 
 function Navbar() {
@@ -22,8 +18,7 @@ function Navbar() {
       <div className="flex items-center gap-4 text-base font-medium text-neutral-300">
         <a
           href={resume}
-          target="_blank"
-          rel="noopener noreferrer"
+          download="Abhishek_Tuladhar_Resume.pdf"
           className="flex items-center gap-2 group transition-colors duration-300 hover:text-blue-400"
         >
           {/* Resume Icon */}
@@ -42,9 +37,8 @@ function Navbar() {
             />
           </svg>
 
-          {/* Link Text */}
           <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all after:duration-300 group-hover:after:w-full">
-            View Resume
+            Download Resume
           </span>
         </a>
       </div>
@@ -56,6 +50,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all duration-300 hover:text-[#379e33]"
+          aria-label="GitHub"
         >
           <FaGit />
         </a>
@@ -64,6 +59,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all duration-300 hover:text-[#E4405F]"
+          aria-label="Instagram"
         >
           <FaInstagram />
         </a>
@@ -72,6 +68,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all duration-300 hover:text-[#0077B5]"
+          aria-label="LinkedIn"
         >
           <FaLinkedin />
         </a>
@@ -80,6 +77,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all duration-300 hover:text-[#1769FF]"
+          aria-label="Behance"
         >
           <FaBehance />
         </a>
