@@ -11,7 +11,7 @@ export const EXPERIENCES = [
     year: "2023 - Present",
     role: "Graphic Designer, UI/UX Designer",
     company: "Unlimited Remit",
-    description: `As a Graphic Designer, I create visually striking digital and print assets, including logos, branding materials, and marketing collateral. I collaborate with teams to ensure cohesive design strategies that align with brand identity, effectively engaging the target audience. As a UI/UX Designer, I specialize in designing intuitive, user-centered interfaces, conducting user research, wireframing, and prototyping to deliver seamless, polished experiences across web and mobile platforms. My focus is on merging aesthetics with functionality to ensure the highest level of user satisfaction and interaction.`,
+    description: `As a Graphic Designer, I create visually striking digital and print assets, including logos, branding materials, and marketing collateral. I collaborate with teams to ensure cohesive design strategies that align with brand identity, effectively engaging the target audience. As a UI/UX Designer, I specialize in designing intuitive, user-centered interfaces, conducting user research, wireframing, and prototyping to deliver seamless, polished experiences across web and mobile platforms. My focus is on merging aesthetics with functionality to ensure the highest level of user satisfaction and interaction.Supported front-end development only to translate design to implementation.`,
     technologies: [
       "Photoshop",
       "Illustrator",
