@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/Image/Name.png";
 import { FaLinkedin, FaBehance, FaGit, FaInstagram } from "react-icons/fa";
-import resume from "../assets/portfolio/resume.pdf";
+import resume from "../assets/resume.pdf";
 
 function Navbar() {
   return (
